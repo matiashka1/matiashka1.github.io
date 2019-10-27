@@ -1,0 +1,1000 @@
+<!--<!doctype html>-->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front End Application</title>
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="hide-overlay">
+
+
+<div class="page-wrapper page-single-catalog">
+
+    <header id="header" class="section header-section">
+        <button class="header__mobile-btn" type="button">
+            <img src="img/mob-menu.svg" alt="mobile-btn" class="js-svg">
+        </button>
+        <button class="header__mobile-close-btn">
+            <img src="img/close-button.svg" alt="close-mobile-btn" class="js-svg">
+        </button>
+        <div class="header__overlay" id="header__overlay"></div>
+
+
+        <div class="basket">
+            <i class="zmdi zmdi-shopping-cart"></i><a href="">Basket
+            <div class="basket__count">(<span>0</span>)</div>
+        </a>
+        </div>
+
+        <div class="basket-overlay">
+
+            <div class="basket-details">
+                <!--<div id="overlay"></div>-->
+                <button class="basket-details__close" type="button"><i class="zmdi zmdi-close"></i></button>
+                <div class="basket-details__left">
+                    <div class="container">
+                        <div class="basket-details__info">
+
+                            <div class="basket-details__left-top">
+                                <h2>Basket Details</h2>
+                                <div class="basket-details__left-items"><span></span> Items</div>
+                            </div>
+
+
+                            <div class="basket-details__left-bottom">
+                                <table class="basket-details-table">
+                                    <thead>
+                                    <tr class="basket-details-table__head">
+                                        <th class="basket-details-table__product">product detail</th>
+                                        <th class="basket-details-table__quantity">quantity</th>
+                                        <th class="basket-details-table__price">price</th>
+                                        <th class="basket-details-table__total">total</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="basket-details-table__body">
+                                    <tr class="basket-details-products">
+                                        <td class="basket-details-table__product">
+                                            <div class="account-order">
+                                                <div class="account-order__img">
+                                                    <img src="img/order-account-1.jpg" alt="order-img">
+                                                </div>
+                                                <div class="account-order__info">
+                                                    <div class="account-order__top">
+                                                        <div class="account-order__name">Gymshark Fleur Texture
+                                                            Leggings - Charcoal Marl</div>
+                                                    </div>
+                                                    <div class="account-order__details">
+                                                        <div class="account-order__size">MEDIUM</div>
+                                                    </div>
+                                                    <a href="" class="account-order__remove-btn">Remove</a>
+                                                </div>
+                                            </div>
+                                        </td >
+                                        <td  class="basket-details-table__quantity">
+                                            <div class="quantity">
+                                                <div class="quantity__title">quantity</div>
+                                                <div class="quantity__text">
+                                                    <button class="change change--minus">-</button>
+                                                    <button class="quantity__value" >1</button>
+                                                    <button class="change change--plus">+</button>
+                                                </div>
+                                            </div></td>
+                                        <td class="basket-details-table__price" data-tab-price="50"><i>price</i>50.00€</td>
+                                        <td class="basket-details-table__total" data-tab-total-price=""><i>total price</i><span></span>.00€</td>
+                                    </tr>
+                                    <tr class="basket-details-products">
+                                        <td class="basket-details-table__product">
+                                            <div class="account-order">
+                                                <div class="account-order__img">
+                                                    <img src="img/order-account-1.jpg" alt="order-img">
+                                                </div>
+                                                <div class="account-order__info">
+                                                    <div class="account-order__top">
+                                                        <div class="account-order__name">Gymshark Fleur Texture
+                                                            Leggings - Charcoal Marl</div>
+                                                    </div>
+                                                    <div class="account-order__details">
+                                                        <div class="account-order__size">MEDIUM</div>
+                                                    </div>
+                                                    <a href="" class="account-order__remove-btn">Remove</a>
+                                                </div>
+                                            </div>
+                                        </td >
+                                        <td  class="basket-details-table__quantity">
+                                            <div class="quantity">
+                                                <div class="quantity__title">quantity</div>
+                                                <div class="quantity__text">
+                                                    <button class="change change--minus">-</button>
+                                                    <button class="quantity__value" >2</button>
+                                                    <button class="change change--plus">+</button>
+                                                </div>
+                                            </div></td>
+                                        <td class="basket-details-table__price" data-tab-price="50"><i>price</i>50.00€</td>
+                                        <td class="basket-details-table__total" data-tab-total-price=""><i>total price</i><span></span>.00€</td>
+                                    </tr>
+                                    </tbody>
+
+                                </table>
+                                <a href="catalog.html" class="basket-details__return-btn"><img src="img/arrow-l-b.png" alt="arrow-img">Continue Shopping</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-details__right">
+
+                    <div class="basket-details__right-top">
+                        <h2>Order Summary</h2>
+                    </div>
+
+                    <div class="basket-details__right-bottom">
+                        <form action="mail.php" class="basket-details__form">
+
+                            <input type="hidden" name="project_name" value="EAZYWAY">
+                            <input type="hidden" name="form_subject" value="Подписаться на новости">
+                            <input type="hidden" name="admin_email" value="rudakov.a@profmk.ru">
+
+                            <div class="basket-details__form-top">
+                                <div class="basket-details__form-top-count">ITEMS<span></span></div>
+                                <div class="basket-details__form-top-price"><span></span>.00€</div>
+                            </div>
+
+                            <div class="basket-details__item input-wrap form-item">
+                                <h3>shipping</h3>
+                                <select class="contact-us__form-item-select" name="Доставка">
+                                    <option value="1">Standart Delivery - 5€</option>
+                                    <option value="2">Fast Delivery - 20€</option>
+                                    <option value="3">Delivery  Home - 25€</option>
+                                </select>
+                            </div>
+                            <div class="basket-details__item input-wrap form-item">
+                                <h3>COUPON CODE</h3>
+                                <input type="text" name="код" placeholder="Enter your code">
+                            </div>
+                            <a  class="btn btn--grey basket-details__apply-btn">apply</a>
+
+                            <div class="basket-details__total">
+                                <div class="blog-details__total-text">total cost</div>
+                                <div class="blog-details__total-price"><span>155</span>.00€</div>
+                            </div>
+                            <button class="basket-details__checkout-btn btn btn--black">checkout</button>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <a class="logo logo--mobile">
+            <img src="img/logo.svg" alt="logo-img">
+        </a>
+        <div class="header">
+            <div class="header__left">
+                <a class="logo">
+                    <img src="img/logo.svg" alt="logo-img">
+                </a>
+                <ul class="main-menu">
+                    <li>
+                        <a href="" class="main-menu__link">ALL</a>
+                        <div class="header-submenu">
+                            <div class="header-submenu__left">
+                                <div class="header-submenu__items">
+                                    <div class="header-submenu__item">
+                                        <h2>All Men</h2>
+                                        <ul class="header-submenu__list">
+                                            <li><a href="">T-SHIRTS</a></li>
+                                            <li><a href="">STRINGERS/TANKS</a></li>
+                                            <li><a href="">PANTS</a></li>
+                                            <li><a href="">SHORTS</a></li>
+                                            <li><a href="">HOODIES/JACKETS</a></li>
+                                            <li><a href="">LONGSLEEVES</a></li>
+                                            <li><a href="">TIGHTS</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <h2>All Women</h2>
+                                        <ul class="header-submenu__list">
+                                            <li><a href="">LEGGINGS/TIGHTS</a></li>
+                                            <li><a href="">SEAMLESS</a></li>
+                                            <li><a href="">SHORTS</a></li>
+                                            <li><a href="">T-SHIRTS & TOPS</a></li>
+                                            <li><a href="">PANTS</a></li>
+                                            <li><a href="">HOODIES/JACKETS</a></li>
+                                            <li><a href="">SPORTS BRAS/CROPS</a></li>
+                                            <li><a href="">ALL</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <h2>Accessories</h2>
+                                        <ul class="header-submenu__list">
+                                            <li><a href="">HATS</a></li>
+                                            <li><a href="">BAGS</a></li>
+                                            <li><a href="">GIFT CARDS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-submenu__right" style="background-image: url(img/header-submenu.jpg);">
+                                <div class="new__text new__text--submenu">
+                                    <h2>NEW RELEASES</h2>
+                                    <p>Womens collection</p>
+                                    <a href="" class="btn btn--white">explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="main-menu__link">MENS</a>
+                        <div class="header-submenu">
+                            <div class="header-submenu__left">
+                                <div class="header-submenu__items">
+                                    <div class="header-submenu__item">
+                                        <h2>All Men</h2>
+                                        <ul class="header-submenu__list">
+                                            <li><a href="">T-SHIRTS</a></li>
+                                            <li><a href="">STRINGERS/TANKS</a></li>
+                                            <li><a href="">PANTS</a></li>
+                                            <li><a href="">SHORTS</a></li>
+                                            <li><a href="">HOODIES/JACKETS</a></li>
+                                            <li><a href="">LONGSLEEVES</a></li>
+                                            <li><a href="">TIGHTS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-submenu__right" style="background-image: url(img/header-submenu.jpg);">
+                                <div class="new__text new__text--submenu">
+                                    <h2>NEW RELEASES</h2>
+                                    <p>Womens collection</p>
+                                    <a href="" class="btn btn--white">explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="main-menu__link">WOMENS</a>
+                        <div class="header-submenu">
+                            <div class="header-submenu__left">
+                                <div class="header-submenu__items">
+                                    <div class="header-submenu__item">
+                                        <h2>All Women</h2>
+                                        <ul class="header-submenu__list">
+                                            <li><a href="">LEGGINGS/TIGHTS</a></li>
+                                            <li><a href="">SEAMLESS</a></li>
+                                            <li><a href="">SHORTS</a></li>
+                                            <li><a href="">T-SHIRTS & TOPS</a></li>
+                                            <li><a href="">PANTS</a></li>
+                                            <li><a href="">HOODIES/JACKETS</a></li>
+                                            <li><a href="">SPORTS BRAS/CROPS</a></li>
+                                            <li><a href="">ALL</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-submenu__right" style="background-image: url(img/header-submenu.jpg);">
+                                <div class="new__text new__text--submenu">
+                                    <h2>NEW RELEASES</h2>
+                                    <p>Womens collection</p>
+                                    <a href="" class="btn btn--white">explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="main-menu__link">ACCESSORIES</a>
+                        <div class="header-submenu">
+                            <div class="header-submenu__left">
+                                <div class="header-submenu__items">
+                                    <div class="header-submenu__item">
+                                        <h2>Accessories</h2>
+                                        <ul class="header-submenu__list">
+                                            <li><a href="">HATS</a></li>
+                                            <li><a href="">BAGS</a></li>
+                                            <li><a href="">GIFT CARDS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-submenu__right" style="background-image: url(img/header-submenu.jpg);">
+                                <div class="new__text new__text--submenu">
+                                    <h2>NEW RELEASES</h2>
+                                    <p>Womens collection</p>
+                                    <a href="" class="btn btn--white">explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">SALE</a></li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <form class="search-field searchform" role="search" method="get" id="searchform">
+                    <input name="s" type="text" placeholder="Search">
+                    <button type="submit">
+                        <i class="zmdi zmdi-search"></i>
+                    </button>
+                </form>
+                <a class="personal" href=""><i class="zmdi zmdi-account"></i><span>Account</span></a>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <div class="page-body">
+
+    <section id="single-catalog" class="section single-catalog-section">
+        <div class="single-catalog-wrap">
+            <div class="single-catalog">
+                <div class="single-catalog__photos-wrap">
+                   <div class="single-catalog__photos">
+                       <div class="single-catalog__photo">
+                          <img src="img/card-item-1.jpg" alt="card-img">
+                       </div>
+                       <div class="single-catalog__photo">
+                           <img src="img/card-item-2.jpg" alt="card-img">
+                       </div>
+                       <div class="single-catalog__photo">
+                           <img src="img/card-item-3.jpg" alt="card-img">
+                       </div>
+                       <div class="single-catalog__photo">
+                           <img src="img/card-item-4.jpg" alt="card-img">
+                       </div>
+                       <div class="single-catalog__photo">
+                           <img src="img/card-item-5.jpg" alt="card-img">
+                       </div>
+                       <div class="single-catalog__photo">
+                           <img src="img/card-item-6.jpg" alt="card-img">
+                       </div>
+                   </div>
+                <div class="slider-arrows">
+                    <div class="slider-arrow single-catalog__arrow--next">
+                        <img src="img/arrow-r.png" alt="arrow-img" class="arrow-s">
+                        <img src="img/arrow-r-b.png" alt="arrow-img" class="arrow-e">
+                    </div>
+                    <div class="slider-arrow single-catalog__arrow--prev">
+                        <img src="img/arrow-l.png" alt="arrow-img" class="arrow-s">
+                        <img src="img/arrow-l-b.png" alt="arrow-img" class="arrow-e">
+                    </div>
+                </div>
+                </div>
+
+                <div class="single-catalog__right active">
+                   <div class="single-catalog__text">
+                       <ul class="breadcrumbs">
+                           <li><a href="">WOMENS</a></li>
+                           <li><a href="">NEW RELEASES</a></li>
+                           <li><a href="">FLEX HIGH WAISTED LEGGINGS</a></li>
+                           <li><span>GREY/PINK</span></li>
+                       </ul>
+
+                       <h1 class="black">FLEX HIGH WAISTED LEGGINGS</h1>
+
+                       <div class="single-catalog__colors">GREY/PINK</div>
+
+                       <div class="single-catalog__price">50.00€</div>
+
+                       <div class="single-catalog-details">
+                           <div class="single-catalog-details__item single-catalog-details__item--colors">
+                               <h3>color</h3>
+                               <ul class="colors">
+                                   <li><a data-value="grey" style="background-color: #bfc1ce;" href=""></a></li>
+                                   <li><a data-value="dark-grey" style="background-color: #3f3f3f;" href=""></a></li>
+                                   <li><a data-value="grey2" style="background-color: #bbb8bf;" href=""></a></li>
+                                   <li><a class="active" data-value="pink" style="background-color: #e1bcd2;" href=""></a></li>
+                                   <li><a data-value="grey3" style="background-color: #6a6971;" href=""></a></li>
+                                   <li><a data-value="grey4" style="background-color: #989185;" href=""></a></li>
+                               </ul>
+                           </div>
+                           <div class="single-catalog-details__item">
+                               <div class="sizes">
+                                   <h3>SIZE:</h3>
+                                   <a href="#sizes-table" class="sizes__guide" data-fancybox>SIZE GUIDE</a>
+                                   <div class="sizes__text">
+                                       <button>XS</button>
+                                       <button>S</button>
+                                       <button class="active">M</button>
+                                       <button class="disabled">L</button>
+                                       <button>XL</button>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="single-catalog-details__item">
+                               <div class="quantity">
+                                   <h3>QUANTITY</h3>
+                                   <div class="quantity__text">
+                                       <button class="change change--minus">-</button>
+                                       <button class="quantity__value">1</button>
+                                       <button class="change change--plus">+</button>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="single-catalog-desc-wrap">
+                           <div class="single-catalog-desc">
+                               <div class="single-catalog-desc__top active" data-tab-top="1">
+                                   <h3>description</h3>
+                                   <i class="zmdi zmdi-plus"></i><i class="zmdi zmdi-minus"></i>
+                               </div>
+                               <div class="single-catalog-desc__bottom active" data-tab-bottom="1">
+                                   <p>How does the most luxurious feeling and fitting leggings imaginable sound? We've conquered it! The Lux leggings are crafted using super-soft fabric, with a supportive high-rise waist for maximum comfort and physique accentuating seams for the ultimate shape enhancement. </p>
+                               </div>
+                           </div>
+                           <div class="single-catalog-desc">
+                               <div class="single-catalog-desc__top" data-tab-top="2">
+                                   <h3>SHIPPING AND RETURNS</h3>
+                                   <i class="zmdi zmdi-plus"></i><i class="zmdi zmdi-minus"></i>
+                               </div>
+                               <div class="single-catalog-desc__bottom" data-tab-bottom="2">
+                                   <p>text return text retur text retur text retur text retur ewfew fserfgdgdfg dfgfd gdfx gfdgh fh fghj fghgf hfgh fg</p>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="single-catalog-buttons">
+                           <a href="" class="btn btn--black">add to cart</a>
+                           <a href="" class="btn btn--grey">add to wishlist</a>
+                       </div>
+
+                       <div class="review-post">
+                           <div class="review-post__share">
+                               <h3>share with:</h3>
+                               <div class="social">
+                                   <a href="" class="social__item"><i class="zmdi zmdi-facebook"></i></a>
+                                   <a href="" class="social__item"><i class="zmdi zmdi-twitter"></i></a>
+                                   <a href="" class="social__item"><i class="zmdi zmdi-pinterest"></i></a>
+                               </div>
+                           </div>
+                           <div class="review-post__btn">write a review</div>
+                       </div>
+
+                       <form action="mail.php" class="review-post__desc">
+                           <input type="hidden" name="project_name" value="EAZYWAY">
+                           <input type="hidden" name="form_subject" value="Подписаться на новости">
+                           <input type="hidden" name="admin_email" value="rudakov.a@profmk.ru">
+
+
+                           <div class="review-post__score">
+                               <h3>score:</h3>
+                               <div class="review-post__score-stars">
+                                   <div class="review-post__score-stars-item">
+                                       <i class="zmdi zmdi-star-outline"></i>
+                                       <i class="zmdi zmdi-star"></i>
+                                   </div>
+                                   <div class="review-post__score-stars-item">
+                                       <i class="zmdi zmdi-star-outline"></i>
+                                       <i class="zmdi zmdi-star"></i>
+                                   </div>
+                                   <div class="review-post__score-stars-item">
+                                       <i class="zmdi zmdi-star-outline"></i>
+                                       <i class="zmdi zmdi-star"></i>
+                                   </div>
+                                   <div class="review-post__score-stars-item">
+                                       <i class="zmdi zmdi-star-outline"></i>
+                                       <i class="zmdi zmdi-star"></i>
+                                   </div>
+                                   <div class="review-post__score-stars-item">
+                                       <i class="zmdi zmdi-star-outline"></i>
+                                       <i class="zmdi zmdi-star"></i>
+                                   </div>
+                               </div>
+                               <button class="review-post__score-close-btn">
+                                   <i class="zmdi zmdi-close"></i>
+                               </button>
+                           </div>
+
+                           <div class="review-post__title input-wrap form-item">
+                               <input type="text" name="review-title" placeholder="Title">
+                           </div>
+                           <div class="review-post__desc form-item input-wrap">
+                               <textarea rows="5" name="review-title" placeholder="Review"></textarea>
+                           </div>
+
+                           <div class="review-post__range">
+                               <input type="hidden" name="size" value="TRUE TO SIZE" class="input-val">
+                               <h3>HOW WOULD YOU RATE THE FIT?</h3>
+                               <div class="range-slider range-slider--size" data-val="50" data-min="0" data-max="100" data-step="1"></div>
+                               <div class="review-post__range-values">
+                                   <h5>TOO SMALL</h5>
+                                   <h5>TRUE TO SIZE</h5>
+                                   <h5>TOO BIG</h5>
+                               </div>
+                           </div>
+                           <div class="review-post__range">
+                               <input type="hidden" name="length" value="PERFECT" class="input-val">
+                               <h3>HOW WOULD YOU RATE THE LENGTH?</h3>
+                               <div class="range-slider range-slider--length" data-val="50" data-min="0" data-max="100" data-step="1"></div>
+                               <div class="review-post__range-values">
+                                   <h5>SHORT</h5>
+                                   <h5>PERFECT</h5>
+                                   <h5>LONG</h5>
+                               </div>
+                           </div>
+                           <div class="review-post__range">
+                               <input type="hidden" name="comfort-level" value="COMFORTABLE" class="input-val">
+                               <h3>HOW WOULD YOU RATE THE COMFORT</h3>
+                               <div class="range-slider range-slider--comfort" data-val="50" data-min="0" data-max="100" data-step="1"></div>
+                               <div class="review-post__range-values">
+                                   <h5>UNCOMFORTABLE</h5>
+                                   <h5>COMFORTABLE</h5>
+                               </div>
+                           </div>
+                           <a href="" class="btn btn--grey">post the review</a>
+                       </form>
+
+                       <div class="reviews">
+                           <h3>reviews (<span>2</span>)</h3>
+                           <div class="reviews__item">
+                           <div class="reviews__top">
+                               <div class="reviews__stars">
+                                   <i class="zmdi zmdi-star"></i>
+                                   <i class="zmdi zmdi-star"></i>
+                                   <i class="zmdi zmdi-star"></i>
+                                   <i class="zmdi zmdi-star"></i>
+                                   <i class="zmdi zmdi-star"></i>
+                               </div>
+                               <div class="reviews__author">Rosie W.</div>
+                               <div class="reviews__status">Verified Buyer</div>
+                               <div class="reviews__date">03/27/19</div>
+                           </div>
+                           <div class="reviews__center">
+                               <h4>Longsleeve - Charcoal</h4>
+                               <p>Fit is great. love the thumb grips. second order from DO YOU EVEN, never disappointed.</p>
+                           </div>
+                           <div class="reviews__bottom">
+                               <p>Was This Review Helpful?</p>
+                               <div class="reviews__rating">
+                                   <div class="reviews__rating-item reviews__rating-item--plus">
+                                       <i class="zmdi zmdi-thumb-up"></i>
+                                       <span>0</span>
+                                   </div>
+                                   <div class="reviews__rating-item reviews__rating-item--minus">
+                                       <i class="zmdi zmdi-thumb-down"></i>
+                                       <span>0</span>
+                                   </div>
+                               </div>
+                           </div>
+                           </div>
+                           <div class="reviews__item">
+                               <div class="reviews__top">
+                                   <div class="reviews__stars">
+                                       <i class="zmdi zmdi-star"></i>
+                                       <i class="zmdi zmdi-star"></i>
+                                       <i class="zmdi zmdi-star"></i>
+                                       <i class="zmdi zmdi-star"></i>
+                                       <i class="zmdi zmdi-star"></i>
+                                   </div>
+                                   <div class="reviews__author">Jacqueline G.</div>
+                                   <div class="reviews__status">Verified Buyer</div>
+                                   <div class="reviews__date">03/27/19</div>
+                               </div>
+                               <div class="reviews__center">
+                                   <h4>Super comfy</h4>
+                                   <p>The top is very comfortable and not overly cropped. I can wear this and the matching bottoms without any skin showing (until I actually start working out lol). I love it!</p>
+                               </div>
+                               <div class="reviews__bottom">
+                                   <p>Was This Review Helpful?</p>
+                                   <div class="reviews__rating">
+                                       <div class="reviews__rating-item reviews__rating-item--plus">
+                                           <i class="zmdi zmdi-thumb-up"></i>
+                                           <span>0</span>
+                                       </div>
+                                       <div class="reviews__rating-item reviews__rating-item--minus">
+                                           <i class="zmdi zmdi-thumb-down"></i>
+                                           <span>0</span>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+               </div>
+        </div>
+    </section>
+
+    <section class="section new-section">
+            <div class="new-wrap">
+                <div class="container container--right">
+                    <div class="new">
+                        <div class="new__text">
+                            <h2>YOU MIGHT ALSO LIKE</h2>
+                            <a href="" class="btn btn--black">see all</a>
+                        </div>
+                        <div class="new-slider-wrap">
+                            <div class="new-slider">
+                                <div class="card-wrap">
+                                    <div class="card">
+                                        <a class="card__img">
+                                            <div class="card__status">
+                                                <span>NEW</span>
+                                            </div>
+                                            <div class="card__sizes-wrap">
+                                                <div class="card__sizes">
+                                                    <h5>SIZE:</h5>
+                                                    <div class="card__sizes-text">
+                                                        <button>XS</button>
+                                                        <button class="disabled">S</button>
+                                                        <button>M</button>
+                                                        <button>L</button>
+                                                        <button>XL</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="img/card-1.jpg" alt="card-img" class="card__img--1">
+                                            <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                        </a>
+                                        <div class="card__info">
+                                            <a class="card__name">flex high waisted leggings</a>
+                                            <div class="card__price">50.00€</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-wrap">
+                                    <div class="card">
+                                        <a class="card__img">
+                                            <div class="card__status">
+                                                <span>NEW</span>
+                                            </div>
+                                            <div class="card__sizes-wrap">
+                                                <div class="card__sizes">
+                                                    <h5>SIZE:</h5>
+                                                    <div class="card__sizes-text">
+                                                        <button>XS</button>
+                                                        <button class="disabled">S</button>
+                                                        <button>M</button>
+                                                        <button>L</button>
+                                                        <button>XL</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="img/card-2.jpg" alt="card-img" class="card__img--1">
+                                            <img src="img/card-1.jpg" alt="card-img" class="card__img--2">
+                                        </a>
+                                        <div class="card__info">
+                                            <a class="card__name">flex high waisted leggings</a>
+                                            <div class="card__price">50.00€</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-wrap">
+                                    <div class="card">
+                                        <a class="card__img">
+                                            <div class="card__status">
+                                                <span>NEW</span>
+                                            </div>
+                                            <div class="card__sizes-wrap">
+                                                <div class="card__sizes">
+                                                    <h5>SIZE:</h5>
+                                                    <div class="card__sizes-text">
+                                                        <button>XS</button>
+                                                        <button class="disabled">S</button>
+                                                        <button>M</button>
+                                                        <button>L</button>
+                                                        <button>XL</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="img/card-3.jpg" alt="card-img" class="card__img--1">
+                                            <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                        </a>
+                                        <div class="card__info">
+                                            <a class="card__name">flex high waisted leggings</a>
+                                            <div class="card__price">50.00€</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-wrap">
+                                    <div class="card">
+                                        <a class="card__img">
+                                            <div class="card__status">
+                                                <span>NEW</span>
+                                            </div>
+                                            <div class="card__sizes-wrap">
+                                                <div class="card__sizes">
+                                                    <h5>SIZE:</h5>
+                                                    <div class="card__sizes-text">
+                                                        <button>XS</button>
+                                                        <button class="disabled">S</button>
+                                                        <button>M</button>
+                                                        <button>L</button>
+                                                        <button>XL</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="img/card-1.jpg" alt="card-img" class="card__img--1">
+                                            <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                        </a>
+                                        <div class="card__info">
+                                            <a class="card__name">flex high waisted leggings</a>
+                                            <div class="card__price">50.00€</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-arrows">
+                                <div class="slider-arrow new-slider__arrow--next">
+                                    <img src="img/arrow-r.png" alt="arrow-img" class="arrow-s">
+                                    <img src="img/arrow-r-b.png" alt="arrow-img" class="arrow-e">
+                                </div>
+                                <div class="slider-arrow new-slider__arrow--prev">
+                                    <img src="img/arrow-l.png" alt="arrow-img" class="arrow-s">
+                                    <img src="img/arrow-l-b.png" alt="arrow-img" class="arrow-e">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="insta" class="section insta-section insta-section--white">
+            <div class="insta-wrap">
+                <div class="container container--right">
+                    <div class="insta">
+                        <h2>shop instagram</h2>
+                        <div class="insta-slider-wrap">
+                            <div class="insta-slider">
+                                <div class="insta-slider__item-wrap">
+                                    <a class="insta-slider__item">
+                                        <img src="img/inst-1.jpg" alt="inst-img">
+                                        <div class="insta-slider__item-desc">
+                                            <h4><i class="zmdi zmdi-instagram"></i>@EAZYWAY_SPORTSWEAR</h4>
+                                            <p>shop the look</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="insta-slider__item-wrap">
+                                    <a class="insta-slider__item">
+                                        <img src="img/inst-2.jpg" alt="inst-img">
+                                        <div class="insta-slider__item-desc">
+                                            <h4><i class="zmdi zmdi-instagram"></i>@EAZYWAY_SPORTSWEAR</h4>
+                                            <p>shop the look</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="insta-slider__item-wrap">
+                                    <a class="insta-slider__item">
+                                        <img src="img/inst-3.jpg" alt="inst-img">
+                                        <div class="insta-slider__item-desc">
+                                            <h4><i class="zmdi zmdi-instagram"></i>@EAZYWAY_SPORTSWEAR</h4>
+                                            <p>shop the look</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="insta-slider__item-wrap">
+                                    <a class="insta-slider__item">
+                                        <img src="img/inst-4.jpg" alt="inst-img">
+                                        <div class="insta-slider__item-desc">
+                                            <h4><i class="zmdi zmdi-instagram"></i>@EAZYWAY_SPORTSWEAR</h4>
+                                            <p>shop the look</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="insta-slider__item-wrap">
+                                    <a class="insta-slider__item">
+                                        <img src="img/inst-1.jpg" alt="inst-img">
+                                        <div class="insta-slider__item-desc">
+                                            <h4><i class="zmdi zmdi-instagram"></i>@EAZYWAY_SPORTSWEAR</h4>
+                                            <p>shop the look</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider-arrows">
+                                <div class="slider-arrow insta-slider__arrow--next">
+                                    <img src="img/arrow-r.png" alt="arrow-img" class="arrow-s">
+                                    <img src="img/arrow-r-b.png" alt="arrow-img" class="arrow-e">
+                                </div>
+                                <div class="slider-arrow insta-slider__arrow--prev">
+                                    <img src="img/arrow-l.png" alt="arrow-img" class="arrow-s">
+                                    <img src="img/arrow-l-b.png" alt="arrow-img" class="arrow-e">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <div class="footer-wrap">
+        <div class="container">
+            <footer id="footer" class="section footer">
+                <div class="footer__top">
+                    <div class="footer__privacy">
+                        <a class="logo" href="index.html">
+                            <img src="img/logo-white.svg" alt="logo-img">
+                        </a>
+                        <ul>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Cookie Policy</a></li>
+                            <li><a href="">Privacy Notice</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__items">
+                        <div class="footer__item">
+                            <h4 class="blog-link"><a href="blog.html">eazyway sportswear</a></h4>
+                            <ul>
+                                <li><a href="about.html">ABOUT US</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4>CONTACT US</h4>
+                            <ul>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="contact-us.html">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4><a>HELP</a></h4>
+                            <ul>
+                                <li><a href="">Delivery & Return</a></li>
+                                <li><a href="">Size Guides</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="">Orders</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4><a>MY ACCOUNT</a></h4>
+                            <ul>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4><a>SOCIAL MEDIA</a></h4>
+                            <div class="social social--footer">
+                                <a href="" class="social__item"><i class="zmdi zmdi-facebook"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-twitter"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-instagram"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-pinterest"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h4>SIGN UP FOR OUR NEWSLETTER</h4>
+                        <form action="mail.php">
+                            <input type="text" placeholder="Your Email Address">
+                            <button>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p><a href="">© 2019 EAZYWAY | All Rights Reserved. | Be a visionary.</a></p>
+                    <ul class="lang">
+                        <li><a href="" class="active">eng</a></li>
+                        <li><a href="">rus</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</div>
+
+<div class="sizes-table" id="sizes-table">
+    <button type="button" class="sizes-table__close-btn"></button>
+    <h2>WOMENS SIZE GUIDE</h2>
+    <p>We understand how important the right fit is. The EazyWay Size Guide offers comprehensive information on our sizing, so you can feel confident that you are buying the best size for you and your body type. Across our range we have garments designed for specific demands which require different styles of fit. For additional peace of mind please refer to the individual product description, especially when choosing products from our Compression & Baselayers and Form ranges.
+        If you’re on the borderline between two sizes, order the smaller size for a tighter fit or the larger size for a looser fit.</p>
+    <h3>WOMENS - TOPS</h3>
+    <p>Our Womens tops include our range of sports bras, t-shirts and hoodies. Be sure to get the correct size for your measurements. Please also refer to individual product pages for extra information.
+        If your measurements for chest and waist correspond to two different suggested sizes, order the size indicated by your chest measurement.</p>
+    <table class="sizes-table__info">
+        <thead>
+        <tr class="sizes-table__title">
+            <th>WOMEN</th>
+            <th>ALL TOPS</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr class="sizes-table__sub-title">
+            <th>SIZE</th>
+            <th>CHEST / CM / IN</th>
+            <th>WAIST / CM / IN</th>
+            <th>HIPS / CM / IN</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>XS</td>
+            <td>84</td>
+            <td>60</td>
+            <td>86</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>(33)</td>
+            <td>(24)</td>
+            <td>(34)</td>
+        </tr>
+        <tr>
+            <td>S</td>
+            <td>89</td>
+            <td>65</td>
+            <td>91</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>(35)</td>
+            <td>(26)</td>
+            <td>(36)</td>
+        </tr>
+        </tbody>
+    </table>
+    <h3>WOMENS - BOTTOMS</h3>
+    <p>Our Womens tops include our range of sports bras, t-shirts and hoodies. Be sure to get the correct size for your measurements. Please also refer to individual product pages for extra information.
+        If your measurements for chest and waist correspond to two different suggested sizes, order the size indicated by your chest measurement.</p>
+    <table class="sizes-table__info">
+        <thead>
+        <tr class="sizes-table__title">
+            <th>WOMEN</th>
+            <th>ALL TOPS</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr class="sizes-table__sub-title">
+            <th>SIZE</th>
+            <th>CHEST / CM / IN</th>
+            <th>WAIST / CM / IN</th>
+            <th>HIPS / CM / IN</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>XS</td>
+            <td>84</td>
+            <td>60</td>
+            <td>86</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>(33)</td>
+            <td>(24)</td>
+            <td>(34)</td>
+        </tr>
+        <tr>
+            <td>S</td>
+            <td>89</td>
+            <td>65</td>
+            <td>91</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>(35)</td>
+            <td>(26)</td>
+            <td>(36)</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+
+<script src="js/bundle.js"></script>
+
+</html>

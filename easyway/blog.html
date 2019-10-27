@@ -1,0 +1,344 @@
+<!--<!doctype html>-->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front End Application</title>
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<div class="page-wrapper page-blog" id="top">
+
+    <header id="header" class="section header-section">
+        <button class="header__mobile-btn" type="button">
+            <img src="img/mob-menu.svg" alt="mobile-btn" class="js-svg">
+        </button>
+        <button class="header__mobile-close-btn">
+            <img src="img/close-button.svg" alt="close-mobile-btn" class="js-svg">
+        </button>
+        <div class="header__overlay" id="header__overlay"></div>
+        <div class="basket">
+            <i class="zmdi zmdi-shopping-cart"></i><a href="">Basket <div class="basket__count">(<span>0</span>)</div></a>
+        </div>
+        <a class="logo logo--mobile" href="index.html">
+            <img src="img/logo.svg" alt="logo-img">
+        </a>
+        <div class="header ">
+            <div class="header__left">
+                <a class="logo" href="index.html">
+                    <img src="img/logo.svg" alt="logo-img">
+                </a>
+                <ul class="main-menu main-menu--blog">
+                    <li><a href="" >Home</a></li>
+                    <li><a href="" >Lifestyle</a></li>
+                    <li><a href="" >Product and style</a></li>
+                    <li><a href="" >Fitness</a></li>
+                    <li><a href="" >Athletes</a></li>
+                    <li><a href="" >Videos</a></li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <form class="search-field searchform" role="search" method="get" id="searchform">
+                    <input name="s" type="text" placeholder="Search">
+                    <button type="submit">
+                        <i class="zmdi zmdi-search"></i>
+                    </button>
+                </form>
+                <a class="personal" href=""><i class="zmdi zmdi-account"></i><span>Account</span></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-body">
+
+        <section id="intro" class="section intro-section intro--blog" style="background-image: url(img/blog-bg.jpg);">
+            <div class="intro-wrap">
+                <div class="container">
+                    <div class="intro">
+                        <div class="intro__text">
+                            <h1 class="black">New In: Studio
+                                Accessories</h1>
+                            <h2>But what are the benefits and how do you use them?</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section blog-section">
+            <div class="blog-wrap">
+                <div class="container container--right">
+                   <div class="blog">
+                       <div class="blog__left">
+                           <form class="search-field search-field--blog searchform" role="search" method="get" id="searchform_filter-menu">
+                               <input name="s" type="text" placeholder="Search">
+                               <button type="submit">
+                                   <i class="zmdi zmdi-search"></i>
+                               </button>
+                           </form>
+                           <div class="filter-menu">
+                               <div class="filter-menu__group">
+                                   <h3>Categories</h3>
+                                   <ul>
+                                       <li><a href="">Home</a></li>
+                                       <li class="dropdown">
+                                           <a href="">Lifestyle</a>
+                                           <ul >
+                                               <li><a href="">Travel</a></li>
+                                               <li><a href="" >Music</a></li>
+                                               <li><a href="">Nutrition</a></li>
+                                               <li><a href="">Lifestyle</a></li>
+                                           </ul>
+                                       </li>
+                                       <li><a href="" >Product and Style</a></li>
+                                       <li><a href="" >Fitness</a></li>
+                                       <li><a href="" >Athletes</a></li>
+                                       <li><a href="" >Videos</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="blog__items">
+                           <a class="blog__item">
+                               <div class="blog__item-img"><img src="img/blog-1.jpg" alt="blog-img"></div>
+                               <div class="blog__item-text">
+                                   <h3 class="blog__item-title">NEW IN: STUDIO ACCESSORIES</h3>
+                                   <div class="blog__item-content">
+                                       <p>But what are the benefits and how do you use them?</p>
+                                   </div>
+                                   <div class="blog__item-details">
+                                       <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                   </div>
+                               </div>
+                           </a>
+                           <a class="blog__item">
+                               <div class="blog__item-img"><img src="img/blog-2.jpg" alt="blog-img"></div>
+                               <div class="blog__item-text">
+                                   <h3 class="blog__item-title">HANNA ÖBERG'S NEW TRAINING ROUTINE</h3>
+                                   <div class="blog__item-content">
+                                       <p>In need of some new workout inspo? Don't panic, Hanna
+                                           Öberg has got you covered... </p>
+                                   </div>
+                                   <div class="blog__item-details">
+                                       <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                   </div>
+                               </div>
+                           </a>
+                           <a class="blog__item">
+                               <div class="blog__item-img"><img src="img/blog-3.jpg" alt="blog-img"></div>
+                               <div class="blog__item-text">
+                                   <h3 class="blog__item-title">NEW IN: STUDIO ACCESSORIES</h3>
+                                   <div class="blog__item-content">
+                                       <p>But what are the benefits and how do you use them?</p>
+                                   </div>
+                                   <div class="blog__item-details">
+                                       <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                   </div>
+                               </div>
+                           </a>
+                           <a class="blog__item">
+                               <div class="blog__item-img"><img src="img/blog-4.jpg" alt="blog-img"></div>
+                               <div class="blog__item-text">
+                                   <h3 class="blog__item-title">NEW IN: STUDIO ACCESSORIES</h3>
+                                   <div class="blog__item-content">
+                                       <p>But what are the benefits and how do you use them?</p>
+                                   </div>
+                                   <div class="blog__item-details">
+                                       <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                   </div>
+                               </div>
+                           </a>
+                           <a class="blog__item">
+                               <div class="blog__item-img"><img src="img/blog-5.jpg" alt="blog-img"></div>
+                               <div class="blog__item-text">
+                                   <h3 class="blog__item-title">HANNA ÖBERG'S NEW TRAINING ROUTINE</h3>
+                                   <div class="blog__item-content">
+                                       <p>In need of some new workout inspo? Don't panic, Hanna
+                                           Öberg has got you covered... </p>
+                                   </div>
+                                   <div class="blog__item-details">
+                                       <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                   </div>
+                               </div>
+                           </a>
+                           <a class="blog__item">
+                               <div class="blog__item-img"><img src="img/blog-6.jpg" alt="blog-img"></div>
+                               <div class="blog__item-text">
+                                   <h3 class="blog__item-title">NEW IN: STUDIO ACCESSORIES</h3>
+                                   <div class="blog__item-content">
+                                       <p>But what are the benefits and how do you use them?</p>
+                                   </div>
+                                   <div class="blog__item-details">
+                                       <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                   </div>
+                               </div>
+                           </a>
+                           <a class="blog__item">
+                               <div class="blog__item-img"><img src="img/blog-1.jpg" alt="blog-img"></div>
+                               <div class="blog__item-text">
+                                   <h3 class="blog__item-title">NEW IN: STUDIO ACCESSORIES</h3>
+                                   <div class="blog__item-content">
+                                       <p>But what are the benefits and how do you use them?</p>
+                                   </div>
+                                   <div class="blog__item-details">
+                                       <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                   </div>
+                               </div>
+                           </a>
+                           <a class="blog__item">
+                               <div class="blog__item-img"><img src="img/blog-2.jpg" alt="blog-img"></div>
+                               <div class="blog__item-text">
+                                   <h3 class="blog__item-title">HANNA ÖBERG'S NEW TRAINING ROUTINE</h3>
+                                   <div class="blog__item-content">
+                                       <p>In need of some new workout inspo? Don't panic, Hanna
+                                           Öberg has got you covered... </p>
+                                   </div>
+                                   <div class="blog__item-details">
+                                       <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                   </div>
+                               </div>
+                           </a>
+                           <a class="blog__item">
+                               <div class="blog__item-img"><img src="img/blog-3.jpg" alt="blog-img"></div>
+                               <div class="blog__item-text">
+                                   <h3 class="blog__item-title">NEW IN: STUDIO ACCESSORIES</h3>
+                                   <div class="blog__item-content">
+                                       <p>But what are the benefits and how do you use them?</p>
+                                   </div>
+                                   <div class="blog__item-details">
+                                       <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                   </div>
+                               </div>
+                           </a>
+                           <div class="navigation-wrap">
+                               <ul class="navigation">
+                                   <li class="disabled">
+                                       <a href="">
+                                           <div class="navigation__arrow navigation__arrow--prev">
+                                               <img src="img/arrow-l.png" alt="arrow-img" class="arrow-s">
+                                               <img src="img/arrow-l-b.png" alt="arrow-img" class="arrow-e">
+                                           </div>
+                                       </a>
+                                   </li>
+                                   <li class="active"><a href="">1</a></li>
+                                   <li><a href="">2</a></li>
+                                   <li><a href="">3</a></li>
+                                   <li>
+                                       <a href="">
+                                           <div class="navigation__arrow navigation__arrow--next">
+                                               <img src="img/arrow-r.png" alt="arrow-img" class="arrow-s">
+                                               <img src="img/arrow-r-b.png" alt="arrow-img" class="arrow-e">
+                                           </div>
+                                       </a>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="footer-wrap">
+        <div class="container">
+            <footer id="footer" class="section footer">
+                <div class="footer__top">
+                    <div class="footer__privacy">
+                        <a class="logo" href="index.html">
+                            <img src="img/logo-white.svg" alt="logo-img">
+                        </a>
+                        <ul>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Cookie Policy</a></li>
+                            <li><a href="">Privacy Notice</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__items">
+                        <div class="footer__item">
+                            <h4 class="blog-link"><a>eazyway sportswear</a></h4>
+                            <ul>
+                                <li><a href="about.html">ABOUT US</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4>CONTACT US</h4>
+                            <ul>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="contact-us.html">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4><a>HELP</a></h4>
+                            <ul>
+                                <li><a href="">Delivery & Return</a></li>
+                                <li><a href="">Size Guides</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="">Orders</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4><a>MY ACCOUNT</a></h4>
+                            <ul>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4><a>SOCIAL MEDIA</a></h4>
+                            <div class="social social--footer">
+                                <a href="" class="social__item"><i class="zmdi zmdi-facebook"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-twitter"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-instagram"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-pinterest"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h4>SIGN UP FOR OUR NEWSLETTER</h4>
+                        <form action="mail.php">
+                            <input type="text" placeholder="Your Email Address">
+                            <button>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p><a href="">© 2019 EAZYWAY | All Rights Reserved. | Be a visionary.</a></p>
+                    <ul class="lang">
+                        <li><a href="" class="active">eng</a></li>
+                        <li><a href="">rus</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</div>
+
+<div id="modal-thanks" class="popup-form">
+    <h2>Thanks for your request</h2>
+</div>
+</body>
+
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8gp2U6txhCTXpCxF8GVafFyqgJ9DN_QA"></script>-->
+<script src="js/bundle.js"></script>
+
+</html>

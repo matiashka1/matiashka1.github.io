@@ -1,0 +1,328 @@
+<!--<!doctype html>-->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front End Application</title>
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<div class="page-wrapper page-blog" id="top">
+
+    <header id="header" class="section header-section">
+        <button class="header__mobile-btn" type="button">
+            <img src="img/mob-menu.svg" alt="mobile-btn" class="js-svg">
+        </button>
+        <button class="header__mobile-close-btn">
+            <img src="img/close-button.svg" alt="close-mobile-btn" class="js-svg">
+        </button>
+        <div class="header__overlay" id="header__overlay"></div>
+        <div class="basket">
+            <i class="zmdi zmdi-shopping-cart"></i><a href="">Basket <div class="basket__count">(<span>0</span>)</div></a>
+        </div>
+        <a class="logo logo--mobile" href="index.html">
+            <img src="img/logo.svg" alt="logo-img">
+        </a>
+        <div class="header ">
+            <div class="header__left">
+                <a class="logo" href="index.html">
+                    <img src="img/logo.svg" alt="logo-img">
+                </a>
+                <ul class="main-menu main-menu--blog">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Lifestyle</a></li>
+                    <li><a href="">Product and style</a></li>
+                    <li><a href="">Fitness</a></li>
+                    <li><a href="">Athletes</a></li>
+                    <li><a href="">Videos</a></li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <form class="search-field searchform" role="search" method="get" id="searchform">
+                    <input name="s" type="text" placeholder="Search">
+                    <button type="submit">
+                        <i class="zmdi zmdi-search"></i>
+                    </button>
+                </form>
+                <a class="personal" href=""><i class="zmdi zmdi-account"></i><span>Account</span></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-body">
+
+        <section id="intro" class="section intro-section intro--blog intro--blog-single" style="background-image: url(img/blog-bg.jpg); background-position: top;">
+            <div class="intro-wrap">
+                <div class="container">
+                    <div class="intro">
+                        <div class="intro__text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section blog-section">
+            <div class="blog-wrap">
+                <div class="container">
+                    <div class="blog">
+                        <div class="blog__left">
+                            <form class="search-field search-field--blog searchform" role="search" method="get" id="searchform_filter-menu">
+                                <input name="s" type="text" placeholder="Search">
+                                <button type="submit">
+                                    <i class="zmdi zmdi-search"></i>
+                                </button>
+                            </form>
+                            <div class="filter-menu">
+                                <div class="filter-menu__group">
+                                    <h3>Categories</h3>
+                                    <ul>
+                                        <li><a href="">Home</a></li>
+                                        <li class="dropdown">
+                                            <a href="">Lifestyle</a>
+                                            <ul >
+                                                <li><a href="">Travel</a></li>
+                                                <li><a href="" >Music</a></li>
+                                                <li><a href="">Nutrition</a></li>
+                                                <li><a href="">Lifestyle</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="" >Product and Style</a></li>
+                                        <li><a href="" >Fitness</a></li>
+                                        <li><a href="" >Athletes</a></li>
+                                        <li><a href="" >Videos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-blog">
+                            <h1 class="black">New In: Studio Accessories</h1>
+                            <div class="blog__item-details">
+                                <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-comments"><span>1</span> comment</div>|<div class="blog__item-company">EASYWAY</div>
+                            </div>
+                            <p>Lest we forget about our trusty accessories, and the essential studio equipment that we couldn't do without.</p>
+                            <p>For the amount of use they get, foam rollers and yoga blocks are probably the most loyal and relied upon pieces of kit at the "cool-down" area. But, we get it - they're used by hundreds of sweat-dripping gym fiends daily...so if you're in need of fresh feels when it comes to your pain-relief and open-bodied movement, you're in the right place.</p>
+                            <p>Here's the very stylish proof from the designer himself...</p>
+                            <img src="img/blog-single-1.jpg" alt="single-blog">
+                            <div class="single-blog__blockquote">
+                                <h2>A WORD FROM OUR DESIGNER</h2>
+                                <span class="single-blog__blockquote-author">- JORDAN MOLESWORTH </span>
+                                <blockquote>
+                                    <p>The Gymshark Studio Blocks are an aided support trainer for any form of studio activity. From supporting your head in forward bends to lifting you up in a seated twist - blocks are ideal for adding lift or grounding you in all manner of poses during yoga. They can help stabilise and add height in standing and balancing poses, or can be placed between the knees to activate the outer leg muscles.</p>
+                                    <p>The design of both the Cork and Foam Studio Blocks was really important to us - we wanted to be able to offer a customisable level of support. So, with three height options - dependent upon which side of the block you use - they're perfect for any skill level! </p>
+                                </blockquote>
+                            </div>
+                            <h2>YOU KNOW THE DRILL: NEW SEASON. NEW HUES. NEW YOU. </h2>
+                            <p>We've given the Energy+ a facelift by way of brand new colours. And while wearing a colour that your face will, undoubtedly match after a HIIT class doesn't seem like the most stylish vibe you can serve right now, we're pleased to announce that a head-to-toe red or blue 'fit can, actually be très chic. </p>
+                            <h3>IT'S TIME TO SPRING CLEAN YOUR WORKOUT WARDROBE WITH THE ALL NEW ENERGY+ SEAMLESS COLLECTION - A FIRM FAVOURITE FOR FERVENT GYM-GOES AND HEAVY LIFTERS ALIKE.</h3>
+                            <p>Let us explain why: crafted carefully with detailing that's designed to enhance your physique whilst supporting your workout, the Energy+ embodies a new breed of activewear for a new breed of athlete. Fabrics are strong yet soft, seamless yet stretchy and offer the support necessary for every level of endurance.</p>
+                            <div class="single-blog__images">
+                                <img src="img/blog-single-2.jpg" alt="single-blog">
+                                <img src="img/blog-single-3.jpg" alt="single-blog">
+                            </div>
+                            <p>The Gymshark Studio Blocks are an aided support trainer for any form of studio activity. From supporting your head in forward bends to lifting you up in a seated twist - blocks are ideal for adding lift or grounding you in all manner of poses during yoga. They can help stabilise and add height in standing and balancing poses, or can be placed between the knees to activate the outer leg muscles.</p>
+                            <div class="review-post">
+                                <div class="review-post__share">
+                                    <h3>share with:</h3>
+                                    <div class="social">
+                                        <a href="" class="social__item"><i class="zmdi zmdi-facebook"></i></a>
+                                        <a href="" class="social__item"><i class="zmdi zmdi-twitter"></i></a>
+                                        <a href="" class="social__item"><i class="zmdi zmdi-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="single-blog-other" class="section single-blog-other-section">
+            <div class="single-blog-other-wrap">
+                <div class="container container--right">
+                    <div class="single-blog-other">
+                        <h2>similar articles</h2>
+                        <div class="single-blog-slider-wrap">
+                            <div class="single-blog-slider">
+                                <a class="single-blog__item">
+                                    <div class="blog__item-img"><img src="img/blog-4.jpg" alt="blog-img"></div>
+                                    <div class="blog__item-text">
+                                        <h3 class="blog__item-title">NEW IN: STUDIO ACCESSORIES</h3>
+                                        <div class="blog__item-content">
+                                            <p>But what are the benefits and how do you use them?</p>
+                                        </div>
+                                        <div class="blog__item-details">
+                                            <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="single-blog__item">
+                                    <div class="blog__item-img"><img src="img/blog-5.jpg" alt="blog-img"></div>
+                                    <div class="blog__item-text">
+                                        <h3 class="blog__item-title">HANNA ÖBERG'S NEW TRAINING ROUTINE</h3>
+                                        <div class="blog__item-content">
+                                            <p>In need of some new workout inspo? Don't panic, Hanna
+                                                Öberg has got you covered... </p>
+                                        </div>
+                                        <div class="blog__item-details">
+                                            <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="single-blog__item">
+                                    <div class="blog__item-img"><img src="img/blog-6.jpg" alt="blog-img"></div>
+                                    <div class="blog__item-text">
+                                        <h3 class="blog__item-title">NEW IN: STUDIO ACCESSORIES</h3>
+                                        <div class="blog__item-content">
+                                            <p>But what are the benefits and how do you use them?</p>
+                                        </div>
+                                        <div class="blog__item-details">
+                                            <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="single-blog__item">
+                                    <div class="blog__item-img"><img src="img/blog-1.jpg" alt="blog-img"></div>
+                                    <div class="blog__item-text">
+                                        <h3 class="blog__item-title">HANNA ÖBERG'S NEW TRAINING ROUTINE</h3>
+                                        <div class="blog__item-content">
+                                            <p>In need of some new workout inspo? Don't panic, Hanna
+                                                Öberg has got you covered... </p>
+                                        </div>
+                                        <div class="blog__item-details">
+                                            <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="single-blog__item">
+                                    <div class="blog__item-img"><img src="img/blog-3.jpg" alt="blog-img"></div>
+                                    <div class="blog__item-text">
+                                        <h3 class="blog__item-title">NEW IN: STUDIO ACCESSORIES</h3>
+                                        <div class="blog__item-content">
+                                            <p>But what are the benefits and how do you use them?</p>
+                                        </div>
+                                        <div class="blog__item-details">
+                                            <div class="blog__item-date">27 MARCH 2019</div>|<div class="blog__item-company">EASYWAY</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slider-arrows">
+                                <div class="slider-arrow single-blog-slider__arrow--next">
+                                    <img src="img/arrow-r.png" alt="arrow-img" class="arrow-s">
+                                    <img src="img/arrow-r-b.png" alt="arrow-img" class="arrow-e">
+                                </div>
+                                <div class="slider-arrow single-blog-slider__arrow--prev">
+                                    <img src="img/arrow-l.png" alt="arrow-img" class="arrow-s">
+                                    <img src="img/arrow-l-b.png" alt="arrow-img" class="arrow-e">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="footer-wrap">
+        <div class="container">
+            <footer id="footer" class="section footer">
+                <div class="footer__top">
+                    <div class="footer__privacy">
+                        <a class="logo" href="index.html">
+                            <img src="img/logo-white.svg" alt="logo-img">
+                        </a>
+                        <ul>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Cookie Policy</a></li>
+                            <li><a href="">Privacy Notice</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__items">
+                        <div class="footer__item">
+                            <h4>eazyway sportswear</h4>
+                            <ul>
+                                <li><a href="about.html">ABOUT US</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4>CONTACT US</h4>
+                            <ul>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="">Impressum</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4>HELP</h4>
+                            <ul>
+                                <li><a href="">Delivery & Return</a></li>
+                                <li><a href="">Size Guides</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="">Orders</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4>MY ACCOUNT</h4>
+                            <ul>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4>SOCIAL MEDIA</h4>
+                            <div class="social social--footer">
+                                <a href="" class="social__item"><i class="zmdi zmdi-facebook"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-twitter"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-instagram"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-pinterest"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h4>SIGN UP FOR OUR NEWSLETTER</h4>
+                        <form action="mail.php">
+                            <input type="text" placeholder="Your Email Address">
+                            <button>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p><a href="">© 2019 EAZYWAY | All Rights Reserved. | Be a visionary.</a></p>
+                    <ul class="lang">
+                        <li><a href="" class="active">eng</a></li>
+                        <li><a href="">rus</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</div>
+<div id="modal-thanks" class="popup-form">
+    <h2>Thanks for your request</h2>
+</div>
+
+</body>
+
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8gp2U6txhCTXpCxF8GVafFyqgJ9DN_QA"></script>-->
+<script src="js/bundle.js"></script>
+
+</html>

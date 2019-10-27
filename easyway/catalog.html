@@ -1,0 +1,875 @@
+<!--<!doctype html>-->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front End Application</title>
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="hide-overlay">
+
+
+<div class="page-wrapper catalog-page" id="top">
+
+    <header id="header" class="section header-section">
+        <button class="header__mobile-btn" type="button">
+            <img src="img/mob-menu.svg" alt="mobile-btn" class="js-svg">
+        </button>
+        <button class="header__mobile-close-btn">
+            <img src="img/close-button.svg" alt="close-mobile-btn" class="js-svg">
+        </button>
+        <div class="header__overlay" id="header__overlay"></div>
+
+
+        <div class="basket">
+            <i class="zmdi zmdi-shopping-cart"></i><a href="">Basket
+            <div class="basket__count">(<span>0</span>)</div>
+        </a>
+        </div>
+
+        <div class="basket-overlay">
+
+            <div class="basket-details">
+                <!--<div id="overlay"></div>-->
+                <button class="basket-details__close" type="button"><i class="zmdi zmdi-close"></i></button>
+                <div class="basket-details__left">
+                    <div class="container">
+                        <div class="basket-details__info">
+
+                            <div class="basket-details__left-top">
+                                <h2>Basket Details</h2>
+                                <div class="basket-details__left-items"><span></span> Items</div>
+                            </div>
+
+
+                            <div class="basket-details__left-bottom">
+                                <table class="basket-details-table">
+                                    <thead>
+                                    <tr class="basket-details-table__head">
+                                        <th class="basket-details-table__product">product detail</th>
+                                        <th class="basket-details-table__quantity">quantity</th>
+                                        <th class="basket-details-table__price">price</th>
+                                        <th class="basket-details-table__total">total</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="basket-details-table__body">
+                                    <tr class="basket-details-products">
+                                        <td class="basket-details-table__product">
+                                            <div class="account-order">
+                                                <div class="account-order__img">
+                                                    <img src="img/order-account-1.jpg" alt="order-img">
+                                                </div>
+                                                <div class="account-order__info">
+                                                    <div class="account-order__top">
+                                                        <div class="account-order__name">Gymshark Fleur Texture
+                                                            Leggings - Charcoal Marl</div>
+                                                    </div>
+                                                    <div class="account-order__details">
+                                                        <div class="account-order__size">MEDIUM</div>
+                                                    </div>
+                                                    <a href="" class="account-order__remove-btn">Remove</a>
+                                                </div>
+                                            </div>
+                                        </td >
+                                        <td  class="basket-details-table__quantity">
+                                            <div class="quantity">
+                                                <div class="quantity__title">quantity</div>
+                                                <div class="quantity__text">
+                                                    <button class="change change--minus">-</button>
+                                                    <button class="quantity__value" >1</button>
+                                                    <button class="change change--plus">+</button>
+                                                </div>
+                                            </div></td>
+                                        <td class="basket-details-table__price" data-tab-price="50"><i>price</i>50.00€</td>
+                                        <td class="basket-details-table__total" data-tab-total-price=""><i>total price</i><span></span>.00€</td>
+                                    </tr>
+                                    <tr class="basket-details-products">
+                                        <td class="basket-details-table__product">
+                                            <div class="account-order">
+                                                <div class="account-order__img">
+                                                    <img src="img/order-account-1.jpg" alt="order-img">
+                                                </div>
+                                                <div class="account-order__info">
+                                                    <div class="account-order__top">
+                                                        <div class="account-order__name">Gymshark Fleur Texture
+                                                            Leggings - Charcoal Marl</div>
+                                                    </div>
+                                                    <div class="account-order__details">
+                                                        <div class="account-order__size">MEDIUM</div>
+                                                    </div>
+                                                    <a href="" class="account-order__remove-btn">Remove</a>
+                                                </div>
+                                            </div>
+                                        </td >
+                                        <td  class="basket-details-table__quantity">
+                                            <div class="quantity">
+                                                <div class="quantity__title">quantity</div>
+                                                <div class="quantity__text">
+                                                    <button class="change change--minus">-</button>
+                                                    <button class="quantity__value" >2</button>
+                                                    <button class="change change--plus">+</button>
+                                                </div>
+                                            </div></td>
+                                        <td class="basket-details-table__price" data-tab-price="50"><i>price</i>50.00€</td>
+                                        <td class="basket-details-table__total" data-tab-total-price=""><i>total price</i><span></span>.00€</td>
+                                    </tr>
+                                    </tbody>
+
+                                </table>
+                                <a href="catalog.html" class="basket-details__return-btn"><img src="img/arrow-l-b.png" alt="arrow-img">Continue Shopping</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-details__right">
+
+                    <div class="basket-details__right-top">
+                        <h2>Order Summary</h2>
+                    </div>
+
+                    <div class="basket-details__right-bottom">
+                        <form action="mail.php" class="basket-details__form">
+
+                            <input type="hidden" name="project_name" value="EAZYWAY">
+                            <input type="hidden" name="form_subject" value="Подписаться на новости">
+                            <input type="hidden" name="admin_email" value="rudakov.a@profmk.ru">
+
+                            <div class="basket-details__form-top">
+                                <div class="basket-details__form-top-count">ITEMS<span></span></div>
+                                <div class="basket-details__form-top-price"><span></span>.00€</div>
+                            </div>
+
+                            <div class="basket-details__item input-wrap form-item">
+                                <h3>shipping</h3>
+                                <select class="contact-us__form-item-select" name="Доставка">
+                                    <option value="1">Standart Delivery - 5€</option>
+                                    <option value="2">Fast Delivery - 20€</option>
+                                    <option value="3">Delivery  Home - 25€</option>
+                                </select>
+                            </div>
+                            <div class="basket-details__item input-wrap form-item">
+                                <h3>COUPON CODE</h3>
+                                <input type="text" name="код" placeholder="Enter your code">
+                            </div>
+                            <a  class="btn btn--grey basket-details__apply-btn">apply</a>
+
+                            <div class="basket-details__total">
+                                <div class="blog-details__total-text">total cost</div>
+                                <div class="blog-details__total-price"><span>155</span>.00€</div>
+                            </div>
+                            <button class="basket-details__checkout-btn btn btn--black">checkout</button>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <a class="logo logo--mobile">
+            <img src="img/logo.svg" alt="logo-img">
+        </a>
+        <div class="header">
+            <div class="header__left">
+                <a class="logo">
+                    <img src="img/logo.svg" alt="logo-img">
+                </a>
+                <ul class="main-menu">
+                    <li>
+                        <a href="" class="main-menu__link">ALL</a>
+                        <div class="header-submenu">
+                            <div class="header-submenu__left">
+                                <div class="header-submenu__items">
+                                    <div class="header-submenu__item">
+                                        <h2>All Men</h2>
+                                        <ul class="header-submenu__list">
+                                            <li><a href="">T-SHIRTS</a></li>
+                                            <li><a href="">STRINGERS/TANKS</a></li>
+                                            <li><a href="">PANTS</a></li>
+                                            <li><a href="">SHORTS</a></li>
+                                            <li><a href="">HOODIES/JACKETS</a></li>
+                                            <li><a href="">LONGSLEEVES</a></li>
+                                            <li><a href="">TIGHTS</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <h2>All Women</h2>
+                                        <ul class="header-submenu__list">
+                                            <li><a href="">LEGGINGS/TIGHTS</a></li>
+                                            <li><a href="">SEAMLESS</a></li>
+                                            <li><a href="">SHORTS</a></li>
+                                            <li><a href="">T-SHIRTS & TOPS</a></li>
+                                            <li><a href="">PANTS</a></li>
+                                            <li><a href="">HOODIES/JACKETS</a></li>
+                                            <li><a href="">SPORTS BRAS/CROPS</a></li>
+                                            <li><a href="">ALL</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-submenu__item">
+                                        <h2>Accessories</h2>
+                                        <ul class="header-submenu__list">
+                                            <li><a href="">HATS</a></li>
+                                            <li><a href="">BAGS</a></li>
+                                            <li><a href="">GIFT CARDS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-submenu__right" style="background-image: url(img/header-submenu.jpg);">
+                                <div class="new__text new__text--submenu">
+                                    <h2>NEW RELEASES</h2>
+                                    <p>Womens collection</p>
+                                    <a href="" class="btn btn--white">explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="main-menu__link">MENS</a>
+                        <div class="header-submenu">
+                            <div class="header-submenu__left">
+                                <div class="header-submenu__items">
+                                    <div class="header-submenu__item">
+                                        <h2>All Men</h2>
+                                        <ul class="header-submenu__list">
+                                            <li><a href="">T-SHIRTS</a></li>
+                                            <li><a href="">STRINGERS/TANKS</a></li>
+                                            <li><a href="">PANTS</a></li>
+                                            <li><a href="">SHORTS</a></li>
+                                            <li><a href="">HOODIES/JACKETS</a></li>
+                                            <li><a href="">LONGSLEEVES</a></li>
+                                            <li><a href="">TIGHTS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-submenu__right" style="background-image: url(img/header-submenu.jpg);">
+                                <div class="new__text new__text--submenu">
+                                    <h2>NEW RELEASES</h2>
+                                    <p>Womens collection</p>
+                                    <a href="" class="btn btn--white">explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="main-menu__link">WOMENS</a>
+                        <div class="header-submenu">
+                            <div class="header-submenu__left">
+                                <div class="header-submenu__items">
+                                    <div class="header-submenu__item">
+                                        <h2>All Women</h2>
+                                        <ul class="header-submenu__list">
+                                            <li><a href="">LEGGINGS/TIGHTS</a></li>
+                                            <li><a href="">SEAMLESS</a></li>
+                                            <li><a href="">SHORTS</a></li>
+                                            <li><a href="">T-SHIRTS & TOPS</a></li>
+                                            <li><a href="">PANTS</a></li>
+                                            <li><a href="">HOODIES/JACKETS</a></li>
+                                            <li><a href="">SPORTS BRAS/CROPS</a></li>
+                                            <li><a href="">ALL</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-submenu__right" style="background-image: url(img/header-submenu.jpg);">
+                                <div class="new__text new__text--submenu">
+                                    <h2>NEW RELEASES</h2>
+                                    <p>Womens collection</p>
+                                    <a href="" class="btn btn--white">explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="" class="main-menu__link">ACCESSORIES</a>
+                        <div class="header-submenu">
+                            <div class="header-submenu__left">
+                                <div class="header-submenu__items">
+                                    <div class="header-submenu__item">
+                                        <h2>Accessories</h2>
+                                        <ul class="header-submenu__list">
+                                            <li><a href="">HATS</a></li>
+                                            <li><a href="">BAGS</a></li>
+                                            <li><a href="">GIFT CARDS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-submenu__right" style="background-image: url(img/header-submenu.jpg);">
+                                <div class="new__text new__text--submenu">
+                                    <h2>NEW RELEASES</h2>
+                                    <p>Womens collection</p>
+                                    <a href="" class="btn btn--white">explore</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">SALE</a></li>
+                </ul>
+            </div>
+            <div class="header__right">
+                <form class="search-field searchform" role="search" method="get" id="searchform">
+                    <input name="s" type="text" placeholder="Search">
+                    <button type="submit">
+                        <i class="zmdi zmdi-search"></i>
+                    </button>
+                </form>
+                <a class="personal" href=""><i class="zmdi zmdi-account"></i><span>Account</span></a>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <div class="page-body">
+        
+        <section id="intro" class="section intro-section" style="background-image: url(img/welcome-1.jpg); background-position: top;">
+            <div class="intro-wrap">
+                <div class="container">
+                   <div class="intro">
+                       <div class="intro__text">
+                           <h1>new releases</h1>
+                           <p>All the latest Gymshark releases are now here. Be the first to reach your goals.</p>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </section>
+        
+        <section id="catalog" class="section catalog-section" style="background-image: url(img/catalog-bg.jpg);">
+            <div class="catalog-wrap">
+                <div class="container container--right">
+                   <div class="catalog">
+                       <div class="catalog__top">
+                           <div class="catalog__top-left">
+                               <ul class="breadcrumbs">
+                                   <li><a href="">WOMENS</a></li>
+                                   <li><span >NEW RELEASES</span></li>
+                               </ul>
+                           </div>
+                           <div class="catalog__top-right">
+                               <div class="filter">
+                                   <ul class="filter__list">
+                                       <!--<li>-->
+                                           <!--<span>Zip Hoodies</span>-->
+                                           <!--<button class="filter__close">-->
+                                               <!--<i class="zmdi zmdi-close"></i>-->
+                                           <!--</button>-->
+                                       <!--</li>-->
+                                       <!--<li>-->
+                                           <!--<span>White</span>-->
+                                           <!--<button class="filter__close">-->
+                                               <!--<i class="zmdi zmdi-close"></i>-->
+                                           <!--</button>-->
+                                       <!--</li>-->
+                                       <!--<li>-->
+                                           <!--<span>Fit</span>-->
+                                           <!--<button class="filter__close">-->
+                                               <!--<i class="zmdi zmdi-close"></i>-->
+                                           <!--</button>-->
+                                       <!--</li>-->
+                                   </ul>
+                                   <button class="filter__clear">Clear All</button>
+                               </div>
+                               <div class="sort-wrap">
+                                   <a class="sort">Sort by<i class="zmdi zmdi-chevron-down"></i></a>
+                                   <ul class="sort__list">
+                                       <li><a href="">Popular</a></li>
+                                       <li><a href="">Newest</a></li>
+                                       <li><a href="">Price: High to Low</a></li>
+                                       <li><a href="">Price: Low to High</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="catalog__bottom">
+                           <div class="catalog__bottom-left">
+                               <div class="filter-menu">
+                                   <div class="filter-menu__group">
+                                       <h3>SHOP BY CATEGORY
+                                           <i class="zmdi zmdi-plus"></i><i class="zmdi zmdi-minus"></i>
+                                       </h3>
+                                       <div class="filter-menu__list">
+                                       <ul>
+                                           <li><a href="">All Products</a></li>
+                                           <li><a href="" data-value="Bottoms & Leggings">Bottoms & Leggings</a></li>
+                                           <li class="dropdown">
+                                               <a href="" data-value="Hoodies & Jackets">Hoodies & Jackets</a>
+                                               <ul>
+                                                   <li><a href="" data-value="Pullovers">Pullovers</a></li>
+                                                   <li class="dropdown">
+                                                       <a href="" data-value="Hoodies">Hoodies</a>
+                                                       <ul>
+                                                           <li><a href="" data-value="Hoodies1">Hoodies1</a></li>
+                                                           <li><a href="" data-value="Hoodies2">Hoodies2</a></li>
+                                                       </ul>
+                                                   </li>
+                                                   <li><a href="" data-value="Zip Jackets">Zip Jackets</a></li>
+                                                   <li><a href="">View All</a></li>
+                                               </ul>
+                                           </li>
+                                           <li><a href="" data-value="Shorts">Shorts</a></li>
+                                           <li><a href="" data-value="Sports Bras">Sports Bras</a></li>
+                                           <li><a href="" data-value="Swimwear">Swimwear</a></li>
+                                           <li><a href="" data-value="T-Shirts & Tops">T-Shirts & Tops</a></li>
+                                           <li><a href="" data-value="Underwear & Socks">Underwear & Socks</a></li>
+                                       </ul>
+                                       </div>
+                                   </div>
+                                   <div class="filter-menu__group">
+                                       <h3>FILTER BY COLOUR
+                                           <i class="zmdi zmdi-plus"></i><i class="zmdi zmdi-minus"></i>
+                                       </h3>
+                                       <div class="filter-menu__list">
+                                       <ul class="colors">
+                                           <li><a data-value="black" class="black" style="background-color: #000000;" href=""></a></li>
+                                           <li><a data-value="blue" style="background-color: #2d28df;" href=""></a></li>
+                                           <li><a class="active" data-value="green" style="background-color: #0fa313;" href=""></a></li>
+                                           <li><a  data-value="grey" style="background-color: #aeaeae;" href=""></a></li>
+                                           <li><a data-value="pink" style="background-color: #f63acc;" href=""></a></li>
+                                           <li><a data-value="purple" style="background-color: #a025da;" href=""></a></li>
+                                           <li><a data-value="red" style="background-color: #e31e1e;" href=""></a></li>
+                                           <li><a data-value="white" style="background-color: #ffffff;" href=""></a></li>
+                                           <li><a data-value="yellow" style="background-color: #ffff00;" href=""></a></li>
+                                       </ul>
+                                       </div>
+                                   </div>
+                                   <div class="filter-menu__group">
+                                       <h3>FILTER BY COLLECTION
+                                           <i class="zmdi zmdi-plus"></i><i class="zmdi zmdi-minus"></i>
+                                       </h3>
+                                       <div class="filter-menu__list">
+                                       <ul>
+                                           <li><a href="" data-value="Camo">Camo</a></li>
+                                           <li><a href="" data-value="Energy">Energy</a></li>
+                                           <li class="dropdown"><a href="" data-value="Fit">Fit</a></li>
+                                           <li class="dropdown"><a href="" data-value="Fleur">Fleur</a></li>
+                                           <li><a href="" data-value="Flex">Flex</a></li>
+                                           <li><a href="" data-value="Slounge">Slounge</a></li>
+                                           <li><a href="" data-value="Vital">Vital</a></li>
+                                       </ul>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="catalog__bottom-right">
+                               <div class="catalog__items active">
+                                   <div class="card">
+                                       <a class="card__img">
+                                           <div class="card__status">
+                                               <span>NEW</span>
+                                           </div>
+                                           <div class="card__sizes-wrap">
+                                               <div class="card__sizes">
+                                                   <h5>SIZE:</h5>
+                                                   <div class="card__sizes-text">
+                                                       <button>XS</button>
+                                                       <button class="disabled">S</button>
+                                                       <button>M</button>
+                                                       <button>L</button>
+                                                       <button>XL</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <img src="img/card-1.jpg" alt="card-img" class="card__img--1">
+                                           <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                       </a>
+                                       <div class="card__info">
+                                           <a class="card__name">flex high waisted leggings</a>
+                                           <div class="card__price">50.00€</div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <a class="card__img">
+                                           <div class="card__status">
+                                               <span>NEW</span>
+                                           </div>
+                                           <div class="card__sizes-wrap">
+                                               <div class="card__sizes">
+                                                   <h5>SIZE:</h5>
+                                                   <div class="card__sizes-text">
+                                                       <button>XS</button>
+                                                       <button class="disabled">S</button>
+                                                       <button>M</button>
+                                                       <button>L</button>
+                                                       <button>XL</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <img src="img/card-2.jpg" alt="card-img" class="card__img--1">
+                                           <img src="img/card-1.jpg" alt="card-img" class="card__img--2">
+                                       </a>
+                                       <div class="card__info">
+                                           <a class="card__name">flex high waisted leggings</a>
+                                           <div class="card__price">50.00€</div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <a class="card__img">
+                                           <div class="card__status">
+                                               <span>NEW</span>
+                                           </div>
+                                           <div class="card__sizes-wrap">
+                                               <div class="card__sizes">
+                                                   <h5>SIZE:</h5>
+                                                   <div class="card__sizes-text">
+                                                       <button>XS</button>
+                                                       <button class="disabled">S</button>
+                                                       <button>M</button>
+                                                       <button>L</button>
+                                                       <button>XL</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <img src="img/card-3.jpg" alt="card-img" class="card__img--1">
+                                           <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                       </a>
+                                       <div class="card__info">
+                                           <a class="card__name">flex high waisted leggings</a>
+                                           <div class="card__price">50.00€</div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <a class="card__img">
+                                           <div class="card__status">
+                                               <span>NEW</span>
+                                           </div>
+                                           <div class="card__sizes-wrap">
+                                               <div class="card__sizes">
+                                                   <h5>SIZE:</h5>
+                                                   <div class="card__sizes-text">
+                                                       <button>XS</button>
+                                                       <button class="disabled">S</button>
+                                                       <button>M</button>
+                                                       <button>L</button>
+                                                       <button>XL</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <img src="img/card-7.jpg" alt="card-img" class="card__img--1">
+                                           <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                       </a>
+                                       <div class="card__info">
+                                           <a class="card__name">flex high waisted leggings</a>
+                                           <div class="card__price">50.00€</div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <a class="card__img">
+                                           <div class="card__status">
+                                               <span>NEW</span>
+                                           </div>
+                                           <div class="card__sizes-wrap">
+                                               <div class="card__sizes">
+                                                   <h5>SIZE:</h5>
+                                                   <div class="card__sizes-text">
+                                                       <button>XS</button>
+                                                       <button class="disabled">S</button>
+                                                       <button>M</button>
+                                                       <button>L</button>
+                                                       <button>XL</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <img src="img/card-8.jpg" alt="card-img" class="card__img--1">
+                                           <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                       </a>
+                                       <div class="card__info">
+                                           <a class="card__name">flex high waisted leggings</a>
+                                           <div class="card__price">50.00€</div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <a class="card__img">
+                                           <div class="card__status card__status--sale">
+                                               <span>SALE</span>
+                                           </div>
+                                           <div class="card__sizes-wrap">
+                                               <div class="card__sizes">
+                                                   <h5>SIZE:</h5>
+                                                   <div class="card__sizes-text">
+                                                       <button>XS</button>
+                                                       <button class="disabled">S</button>
+                                                       <button>M</button>
+                                                       <button>L</button>
+                                                       <button>XL</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <img src="img/card-9.jpg" alt="card-img" class="card__img--1">
+                                           <img src="img/card-1.jpg" alt="card-img" class="card__img--2">
+                                       </a>
+                                       <div class="card__info">
+                                           <a class="card__name">flex high waisted leggings</a>
+                                           <div class="card__price">50.00€</div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <a class="card__img">
+                                           <div class="card__status">
+                                               <span>NEW</span>
+                                           </div>
+                                           <div class="card__sizes-wrap">
+                                               <div class="card__sizes">
+                                                   <h5>SIZE:</h5>
+                                                   <div class="card__sizes-text">
+                                                       <button>XS</button>
+                                                       <button class="disabled">S</button>
+                                                       <button>M</button>
+                                                       <button>L</button>
+                                                       <button>XL</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <img src="img/card-10.jpg" alt="card-img" class="card__img--1">
+                                           <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                       </a>
+                                       <div class="card__info">
+                                           <a class="card__name">flex high waisted leggings</a>
+                                           <div class="card__price">50.00€</div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <a class="card__img">
+                                           <div class="card__status">
+                                               <span>NEW</span>
+                                           </div>
+                                           <div class="card__sizes-wrap">
+                                               <div class="card__sizes">
+                                                   <h5>SIZE:</h5>
+                                                   <div class="card__sizes-text">
+                                                       <button>XS</button>
+                                                       <button class="disabled">S</button>
+                                                       <button>M</button>
+                                                       <button>L</button>
+                                                       <button>XL</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <img src="img/card-11.jpg" alt="card-img" class="card__img--1">
+                                           <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                       </a>
+                                       <div class="card__info">
+                                           <a class="card__name">flex high waisted leggings</a>
+                                           <div class="card__price">50.00€</div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <a class="card__img">
+                                           <div class="card__status">
+                                               <span>NEW</span>
+                                           </div>
+                                           <div class="card__sizes-wrap">
+                                               <div class="card__sizes">
+                                                   <h5>SIZE:</h5>
+                                                   <div class="card__sizes-text">
+                                                       <button>XS</button>
+                                                       <button class="disabled">S</button>
+                                                       <button>M</button>
+                                                       <button>L</button>
+                                                       <button>XL</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <img src="img/card-12.jpg" alt="card-img" class="card__img--1">
+                                           <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                       </a>
+                                       <div class="card__info">
+                                           <a class="card__name">flex high waisted leggings</a>
+                                           <div class="card__price">50.00€</div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <a class="card__img">
+                                           <div class="card__status">
+                                               <span>NEW</span>
+                                           </div>
+                                           <div class="card__sizes-wrap">
+                                               <div class="card__sizes">
+                                                   <h5>SIZE:</h5>
+                                                   <div class="card__sizes-text">
+                                                       <button>XS</button>
+                                                       <button class="disabled">S</button>
+                                                       <button>M</button>
+                                                       <button>L</button>
+                                                       <button>XL</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <img src="img/card-1.jpg" alt="card-img" class="card__img--1">
+                                           <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                       </a>
+                                       <div class="card__info">
+                                           <a class="card__name">flex high waisted leggings</a>
+                                           <div class="card__price">50.00€</div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <a class="card__img">
+                                           <div class="card__status">
+                                               <span>NEW</span>
+                                           </div>
+                                           <div class="card__sizes-wrap">
+                                               <div class="card__sizes">
+                                                   <h5>SIZE:</h5>
+                                                   <div class="card__sizes-text">
+                                                       <button>XS</button>
+                                                       <button class="disabled">S</button>
+                                                       <button>M</button>
+                                                       <button>L</button>
+                                                       <button>XL</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <img src="img/card-1.jpg" alt="card-img" class="card__img--1">
+                                           <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                       </a>
+                                       <div class="card__info">
+                                           <a class="card__name">flex high waisted leggings</a>
+                                           <div class="card__price">50.00€</div>
+                                       </div>
+                                   </div>
+                                   <div class="card">
+                                       <a class="card__img">
+                                           <div class="card__status">
+                                               <span>NEW</span>
+                                           </div>
+                                           <div class="card__sizes-wrap">
+                                               <div class="card__sizes">
+                                                   <h5>SIZE:</h5>
+                                                   <div class="card__sizes-text">
+                                                       <button>XS</button>
+                                                       <button class="disabled">S</button>
+                                                       <button>M</button>
+                                                       <button>L</button>
+                                                       <button>XL</button>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <img src="img/card-1.jpg" alt="card-img" class="card__img--1">
+                                           <img src="img/card-2.jpg" alt="card-img" class="card__img--2">
+                                       </a>
+                                       <div class="card__info">
+                                           <a class="card__name">flex high waisted leggings</a>
+                                           <div class="card__price">50.00€</div>
+                                       </div>
+                                   </div>
+                                   <div class="load-more-wrap">
+                                       <button class="load-more">LOAD <i class="zmdi zmdi-refresh"></i> MORE</button>
+                                   </div>
+                                   <a href="#top" class="scroll-top">
+                                       <i class="zmdi zmdi-chevron-up"></i>
+                                   </a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="footer-wrap">
+        <div class="container">
+            <footer id="footer" class="section footer">
+                <div class="footer__top">
+                    <div class="footer__privacy">
+                        <a class="logo" href="index.html">
+                            <img src="img/logo-white.svg" alt="logo-img">
+                        </a>
+                        <ul>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Cookie Policy</a></li>
+                            <li><a href="">Privacy Notice</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__items">
+                        <div class="footer__item">
+                            <h4 class="blog-link"><a href="blog.html">eazyway sportswear</a></h4>
+                            <ul>
+                                <li><a href="about.html">ABOUT US</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4>CONTACT US</h4>
+                            <ul>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="contact-us.html">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4><a>HELP</a></h4>
+                            <ul>
+                                <li><a href="">Delivery & Return</a></li>
+                                <li><a href="">Size Guides</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="">Orders</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4><a>MY ACCOUNT</a></h4>
+                            <ul>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="register.html">Register</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <h4><a>SOCIAL MEDIA</a></h4>
+                            <div class="social social--footer">
+                                <a href="" class="social__item"><i class="zmdi zmdi-facebook"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-twitter"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-instagram"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-pinterest"></i></a>
+                                <a href="" class="social__item"><i class="zmdi zmdi-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h4>SIGN UP FOR OUR NEWSLETTER</h4>
+                        <form action="mail.php">
+                            <input type="text" placeholder="Your Email Address">
+                            <button>
+                                <i class="zmdi zmdi-chevron-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p><a href="">© 2019 EAZYWAY | All Rights Reserved. | Be a visionary.</a></p>
+                    <ul class="lang">
+                        <li><a href="" class="active">eng</a></li>
+                        <li><a href="">rus</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</div>
+<div id="modal-thanks" class="popup-form">
+    <h2>Thanks for your request</h2>
+</div>
+
+</body>
+
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8gp2U6txhCTXpCxF8GVafFyqgJ9DN_QA"></script>-->
+<script src="js/bundle.js"></script>
+
+</html>
